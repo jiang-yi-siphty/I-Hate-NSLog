@@ -1,9 +1,9 @@
 //
-//  Log.h
-//  Digiflex SMS Reports
+//  Log.m
+//  I-Hate_NSLog
 //
 //  Created by Robert Yi Jiang on 19/03/2014.
-//  Copyright (c) 2014 MyAlarm Pty Ltd. All rights reserved.
+//  Copyright (c) 2014 Robert Yi Jiang All rights reserved.
 //
 
 #import "Log.h"
