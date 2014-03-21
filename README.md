@@ -6,9 +6,7 @@ This customised NSLog can keep my XCode Console neatly. It also supports format 
 NSLog's redundant information wasted too much screen area in my XCode. And, every line sticked together makes me hard to fetch importent information. I really hate this kind debug way. 
 ##What NSLog has
 ###Time Stamp
-The Time stamp is not always useful. Mostly, I don't watch the time stamp. In the Time stamp, Date string is absolutly meanless. Who debug a Objective-C project cross days? I know there must be some extremely scenarios need date string, but only for rare project.  
-
-When I start debug app, most log will generated in one minus. String before minus will be useless for me.  
+The Time stamp is not always useful. Mostly, I don't watch the time stamp. In the Time stamp, Date string is absolutly meanless. Who debug a Objective-C project cross days? I know there must be some extremely scenarios need date string, but only for rare project. When I start debug app, most log will generated in one minus. String before minute will be useless for me.  
 
 ###Project Name
 Come on!! I know what I am working on! Please do not repeatly print my project name in each line!!
