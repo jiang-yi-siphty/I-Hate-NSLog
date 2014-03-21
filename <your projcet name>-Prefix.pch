@@ -1,0 +1,10 @@
+
+//Append following lines into <your project name>-Prefix.pch
+
+
+#import "Log.h"
+#ifdef DEBUG_MODE
+#define NSLog(args...) _Log(@"", __FILE__,__LINE__,__PRETTY_FUNCTION__,args);
+#else
+#define NSLog(args, ... )
+#endif
