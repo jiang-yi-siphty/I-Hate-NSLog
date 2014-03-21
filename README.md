@@ -1,4 +1,4 @@
 I-Hate-NSLog
 ============
 
-A customised NSLog to make my Console neatly. It also supports format consequent JSON string.
+This customised NSLog can make my XCode Console neatly. It also supports format consequent JSON string.
