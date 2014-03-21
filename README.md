@@ -4,8 +4,28 @@ I-Hate-NSLog
 This customised NSLog can keep my XCode Console neatly. It also supports format continous JSON string.
 
 NSLog's redundant information wasted too much screen area in my XCode. And, every line sticked together makes me hard to fetch importent information. I really hate this kind debug way. 
+##What NSLog has
+###Time Stamp
+The Time stamp is not always useful. Mostly, I don't watch the time stamp. In the Time stamp, Date string is absolutly meanless. Who debug a Objective-C project cross days? I know there must be some extremely scenarios need date string, but only for rare project.  
 
-The Time stamp is not always useful. Mostly, I don't watch the time stamp. In the Time stamp, Date string is absolutly meanless. Who debug a Objective-C project cross days? I know there must be some extremely scenarios need date string, but only for rare project.
+When I start debug app, most log will generated in one minus. String before minus will be useless for me.  
+
+###Project Name
+Come on!! I know what I am working on! Please do not repeatly print my project name in each line!!
+
+###Object ID
+I agree I am a newbie. But I don't think most sophisticated developers care the Object ID when they debuging.
+
+NSLog wastes 35+[projectName Length] characters in each line!!!
+
+##What I need
+###File Name and Line Number
+When I debug a little bit bigger project, NSLogs will be marked in every where, different files, different lines. I need to trace back to the file and line I have maked.
+
+###JSON string
+I know you can convert JSON String to JSON data to NSDictionary for NSLog. But the format will not be the standard JSON.
+
+
 
 ##NSLog
 		2014-03-21 15:17:24.115 XXX YYYYYYY[4173:1703] Update Message Data - Start
