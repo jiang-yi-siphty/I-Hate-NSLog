@@ -8,5 +8,5 @@
 
 @interface Log : NSObject
 void _Log(NSString *prefix, const char *file, int lineNumber, const char *funcName, NSString *format,...);
+void LogObj(NSString *prefix, const char *file, int lineNumber, const char *funcName, NSObject *obj,...);
 @end
-
