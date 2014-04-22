@@ -67,9 +67,11 @@ Add following lines into your project's <project>-Prefix.pch
 
 		#import "Log.h"
 		#ifdef DEBUG_MODE
-		#define NSLog( args, ... ) _Log(@"",__FILE__,__LINE__,__PRETTY_FUNCTION__,args);
+		#define NSLog( args ... )      _Log(@"", __FILE__, __LINE__, __PRETTY_FUNCTION__, args);
+		#define NSLogObj( args ... )   LogObj(@"", __FILE__, __LINE__, __PRETTY_FUNCTION__, args);
 		#else
-		#define NSLog( args, ... )
+		#define NSLog( args ... )
+		#define NSLogObj( obj ... )
 		#endif
 		
 		#define NSLogRect(rect) NSLog(@"%s x:%.4f, y:%.4f, w:%.4f, h:%.4f", #rect, rect.origin.x, rect.origin.y, rect.size.width, rect.size.height)
