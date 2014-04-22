@@ -32,9 +32,9 @@ I know you can convert JSON String to JSON data to NSDictionary for NSLog. But t
 		2014-03-21 15:17:24.436 XXX YYYYYYY[4173:1703] Get Messages successful.
 
 ##My NSLog    
-		[xxxYyyMsgTableViewController.m: 417] - Update Message Data - Start
+		 - [xxxYyyMsgTableViewController.m: 417] - Update Message Data - Start
 
-		[             xxxYyyFunctions.m: 338] - Request String: 
+		 - [             xxxYyyFunctions.m: 338] - Request String: 
 												{											
 													"app":"2",
 													"usr":"12345",
@@ -49,7 +49,7 @@ I know you can convert JSON String to JSON data to NSDictionary for NSLog. But t
 													"sign":"sign_request"
 												}
 
-		[             xxxYyyFunctions.m: 358] - Response string: 
+		 - [             xxxYyyFunctions.m: 358] - Response string: 
 												{											
 													"code":228,
 													"res":{												
@@ -59,7 +59,16 @@ I know you can convert JSON String to JSON data to NSDictionary for NSLog. But t
 													"sign":"sign_response"
 												}
 
-		[             xxxYyyFunctions.m: 365] - Get Messages successful.
+		 - [             xxxYyyFunctions.m: 365] - Get Messages successful.
+
+
+##My NSLogObj
+
+		 - [       RUDHomeViewController.m:  61] -  This Object is Kind of Class: _PFArray
+		(
+		    "<Panel: 0x1d5c0e40> (entity: Panel; id: 0x1d5b7140 <x-coredata://353A4FBC-941F-47AE-9D35-351E18133A3B/Panel/p1> ; data: <fault>)",
+		    "<Panel: 0x1d5becf0> (entity: Panel; id: 0x1d589880 <x-coredata://353A4FBC-941F-47AE-9D35-351E18133A3B/Panel/p2> ; data: <fault>)"
+		)  
 
 
 ##How to  
@@ -71,7 +80,7 @@ Add following lines into your project's <project>-Prefix.pch
 		#define NSLogObj( args ... )   LogObj(@"", __FILE__, __LINE__, __PRETTY_FUNCTION__, args);
 		#else
 		#define NSLog( args ... )
-		#define NSLogObj( obj ... )
+		#define NSLogObj( args ... )
 		#endif
 		
 		#define NSLogRect(rect) NSLog(@"%s x:%.4f, y:%.4f, w:%.4f, h:%.4f", #rect, rect.origin.x, rect.origin.y, rect.size.width, rect.size.height)
